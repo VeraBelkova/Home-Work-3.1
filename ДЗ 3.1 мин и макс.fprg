@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vera Belkova"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-13 12:03:08 "/>
+        <attribute name="created" value="VmVyYSBCZWxrb3ZhO0kxNTAwU007MjAyMy0wMi0xMjsiMTE6MjY6MzMgIjsyNzUy"/>
+        <attribute name="edited" value="VmVyYSBCZWxrb3ZhO0kxNTAwU007MjAyMy0wMi0xMzsiMTI6MDM6MDggIjsyOzI4NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, min, max" type="Integer" array="False" size=""/>
+            <assign variable="min" expression="0"/>
+            <assign variable="max" expression="0"/>
+            <output expression="&quot; a = &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b = &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="max" expression="a"/>
+                    <assign variable="min" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="b"/>
+                    <assign variable="min" expression="a"/>
+                </else>
+            </if>
+            <output expression="min" newline="True"/>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
